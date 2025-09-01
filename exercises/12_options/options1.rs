@@ -5,8 +5,11 @@
 fn maybe_ice_cream(hour_of_day: u16) -> Option<u16> {
     // TODO: Complete the function body.
     match hour_of_day {
-        n if n <= 22 => {
+        n if n < 22 => {
             Some(5)
+        }
+        n if n <= 23 => {
+            Some(0)
         }
         _ => None
     }
